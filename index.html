@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Test</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script>
+			alert('Hello World');
+			function buttonAlert() {
+				alert('Button was clicked');
+			}
+			function changeText() {
+				if ($('#change-me').text() == 'I was changed') {
+					$('#change-me').text('Change Me');
+				} else {
+					$('#change-me').text('I was changed');
+				}
+			}
+			function changeDocColor() {
+				randcolor =
+					'#' + Math.floor(Math.random() * 16777215).toString(16);
+				$('body').css('background-color', randcolor);
+			}
+			const myVar = 'Hello World';
+			console.log(myVar);
+
+			function addNums() {
+				const num1 = parseInt(document.getElementById('num1').value);
+				const num2 = parseInt(document.getElementById('num2').value);
+				const sum = num1 + num2;
+				$('#total').text(sum);
+			}
+
+			function submitName() {
+				const firstName = document.getElementById('first-name').value;
+				const lastName = document.getElementById('last-name').value;
+				if (firstName == '' || lastName == '') {
+					alert('Please enter a first and last name');
+				} else if (firstName.length > 20) {
+					alert('First name is too long');
+				} else if (lastName.length > 20) {
+					alert('Last name is too long');
+				} else {
+					$('#full-name').text(firstName + ' ' + lastName);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="buttonAlert()">Click for Alert</button>
+		<button onclick="changeText()">Change Text</button>
+		<button onclick="changeDocColor()">Change Doc Color</button>
+		<p id="change-me">Change Me</p>
+		<!-- a basic form that takes in two numbers and adds them together-->
+		<form>
+			<input type="number" id="num1" name="num1" inputmode="numeric" />
+			<input type="number" id="num2" name="num2" inputmode="numeric" />
+			<input type="button" value="Add" onclick="addNums()" />
+			<p>Total: <span id="total">0</span></p>
+		</form>
+		<!-- Simple form that takes a first and last name -->
+		<form>
+			<label for="first-name">First Name:</label>
+			<input type="text" id="first-name" name="first-name" required />
+			<br />
+			<label for="last-name">Last Name:</label>
+			<input type="text" id="last-name" name="last-name" required />
+			<br />
+			<input type="button" value="Submit" onclick="submitName()" />
+			<p id="full-name"></p>
+		</form>
+	</body>
+</html>

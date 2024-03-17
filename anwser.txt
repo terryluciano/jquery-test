@@ -1,0 +1,29 @@
+1. In your own words, describe at least three common uses of JavaScript in web pages:
+
+- Interactivity: JavaScript adds interactivity by responding to user actions like clicks, submissions, and mouse movements, updating content dynamically without refreshing the page for a better user experience.
+
+- DOM Manipulation: JavaScript offers powerful APIs for modifying the DOM, letting developers dynamically change HTML elements' structure, content, and style, enabling dynamic updates and animations.
+
+- Client-side Validation: JavaScript enables client-side form validation to ensure user input meets criteria before server submission, improving UX with instant feedback and fewer server round-trips.
+
+2. Explain the purpose of the Document Object Model (DOM) in web development:
+
+- The Document Object Model (DOM) in web development serves as a structured, tree-like representation of a web page, allowing languages like JavaScript to interact and manipulate the page. It enables dynamic content changes, event handling, and overall interactivity without page reloading.
+
+3. List and briefly describe three common events that can be handled using JavaScript in the DOM:
+
+- Click Events: Triggered when a user clicks on an element. This is often used to initiate actions like form submission or navigation.
+
+- Mouseover Events: Triggered when a user moves the mouse over an element. This can be used to display additional information or highlight the element.
+
+- Keydown Events: Triggered when a user presses a key on the keyboard. This can be used for actions like form validation or game controls.
+
+4. Describe at least three common uses of jQuery in web development.
+
+- jQuery simplifies DOM manipulation with a consistent API for dynamically changing web page content, structure, and style. It also streamlines event handling by offering an easy syntax and handling cross-browser inconsistencies automatically, and provides a powerful API for Ajax requests, making data fetching from servers seamless without page reloads.
+
+5. Explain how to obtain jQuery, whether through downloading the library or using aContent Delivery Network (CDN)
+
+- You can download jQuery from their website and include it in your project files. This method allows you to host the jQuery library on your own server.
+
+- You can include a link to jQuery hosted on a CDN like Google (I used Google) or Microsoft in your HTML. This method can offer improved performance and availability.
